@@ -9,14 +9,14 @@ interface PinProps {
 
 export function Pin({ imageUrl, title, aspectRatio = "4/5" }: PinProps) {
   return (
-    <div className="rounded-2xl overflow-hidden  hover:shadow-lg transition-shadow duration-300 ease-in-out">
-      <div className="relative group" style={{ aspectRatio }}>
+    <div className=" overflow-hidden  hover:shadow-lg transition-shadow duration-300 ease-in-out">
+      <div className=" relative group" style={{ aspectRatio }}>
         <Image
           src={imageUrl || "/placeholder.svg"}
           alt={title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover"
+          className="object-cover rounded-2xl"
         />
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
           <div className="flex space-x-2">
