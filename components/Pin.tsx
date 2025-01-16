@@ -9,7 +9,7 @@ interface PinProps {
 
 export function Pin({ imageUrl, title, aspectRatio = "4/5" }: PinProps) {
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white">
+    <div className="rounded-2xl overflow-hidden  hover:shadow-lg transition-shadow duration-300 ease-in-out">
       <div className="relative group" style={{ aspectRatio }}>
         <Image
           src={imageUrl || "/placeholder.svg"}
@@ -33,8 +33,10 @@ export function Pin({ imageUrl, title, aspectRatio = "4/5" }: PinProps) {
         </div>
       </div>
       <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2 truncate text-orange-800">{title}</h3>
+
+        <h3 className="font-semibold text-lg mb-2 truncate text-white">{title}</h3>
       </div>
+
     </div>
   )
 }
