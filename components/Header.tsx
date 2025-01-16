@@ -7,7 +7,7 @@ export function Header() {
   const unreadNotifications = 2; 
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-800 border-black border-bottom p-5  shadow-sm">
+    <header className="sticky top-0 z-50 bg-[#131313] border-black border-bottom p-5  shadow-sm">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="text-orange-600 font-bold text-3xl">RAB</Link>
         <div className="flex-grow mx-4">
@@ -16,7 +16,7 @@ export function Header() {
             <Input
               type="text"
               placeholder="Search"
-              className="w-full pl-10 pr-4 py-2 rounded-full bg-gray-800 focus:gray-600 focus:ring-2 focus:ring-red-600 border-2 text-white"
+              className="w-full pl-10 pr-4 py-2 rounded-full bg-[#131313] focus:gray-600 focus:ring-2 focus:ring-red-600 border-2 text-white"
             />
           </div>
         </div>
