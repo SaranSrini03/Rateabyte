@@ -13,9 +13,9 @@ const pins = [
   { id: 10, imageUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470', title: 'Sunset over the Ocean', aspectRatio: '4/5' },
 ]
 
-export function PinterestHome() {
+export function HomePage() {
   return (
-    <div className="min-h-screen bg-orange-50">
+    <div className="min-h-screen bg-gray-800">
       <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {pins.map((pin) => (
